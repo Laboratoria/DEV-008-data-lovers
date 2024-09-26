@@ -17,10 +17,10 @@
     <link rel="stylesheet"    href="css/style.css">
     <!------->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900" >
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!--  -->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
 
   </head>
 
@@ -53,6 +53,8 @@
         <li style="float:right"> <a href="./testimonios.html" class="link-3">Testimonios</a>     </li>
         <li style="float:right"> <a href="./estadistica.html" class="link-2">Estadísticas</a>    </li>
         <li style="float:right"> <a href="./busqueda.html"    class="link-1">Búsqueda </a>       </li>
+
+
       </ul>
 
         </nav>
@@ -61,59 +63,102 @@
     <!-- Inicio - Main -->
     <!-- Cuerpo del contenido -->
     <article class="main">
-      <h1>NOTICIAS</h1> <br>
+      <h1 class="titulocentral">Buscador de Atletas que participaron en Rio 2016</h1>
 
-      <div class="content">
 
-        <div class="content-noticias" >
-          <h3>BOXEO</h3>
-          <h2> Óscar Valdez se declara listo para una pelea de mexicanos contra el 'Vaquero' Navarrete </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/sl28z6gdryrjoidmm2rl" alt="Oscar">
-        </div>
 
-        <div class="content-noticias" >
-          <h3>BALONCESTO</h3>
-          <h2> Carmelo Anthony, triple campeón olímpico, anuncia su retirada del baloncesto </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfvhthv5cr0gbrmkbkle" alt="carmelo">
-        </div>
 
-        <div class="content-noticias" >
-          <h3>FUTBOL</h3>
-          <h2> A qué hora juega Ecuador vs. Corea del Sur por el Mundial Sub 20: canales y horarios para ver En Vivo los octavos de final </h2>
-          <img src="https://www.eluniverso.com/resizer/9XT3X8fhIEaXZk3xbwnTIrtXDwM=/720x540/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/IYWTPJVWNVERNCHPPJS77XZSDI.jpg" alt="seleccion" height="175px">
-        </div>
+      <div class="container-1">
 
-        <div class="content-noticias" >
-          <h3>ATLETISMO</h3>
-          <h2> Diamond League en Rabat 2023: previa, programa, estrellas y cómo ver la Liga de Diamante </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/elrdehxlomxhvt6ui9q6" alt="diamond">
-        </div>
+         <!-- GENERO -->
+        <label for="gender">Género:</label>
+        <select id="gender">
+          <option value="">Seleccione</option>
+        </select>
+          <!-- Nombre -->
+          <label for="name">Nombre:</label>
+          <select id="name">
+            <option value="">Seleccione</option>
+          </select>
 
-        <div class="content-noticias" >
-          <h3>CICLISMO EN RUTA</h3>
-          <h2> Giro d'Italia: mayores victorias latinas y españolas en la grande italiana de ciclismo </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfy1djiep466douunzoq" alt="giro">
-        </div>
 
-        <div class="content-noticias" >
-          <h3>ATLETISMO</h3>
-          <h2> La marcha española brilla en el Europeo por equipos: un récord del mundo y 12 medallas </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/twjznuws7qaexb5i08we" alt="marcha">
-        </div>
-      </div>
+        <!-- MEDALLA -->
+        <label for="medal">Medalla:</label>
+          <select id="medal">
+            <option value="">Seleccione</option>
+          </select>
+
+        <!-- DEPORTE -->
+        <label for="sport">Deporte:</label>
+          <select id="sport">
+            <option value="">Seleccione</option>
+          </select>
+
+         <!-- EQUIPO -->
+        <label for="team">Equipo:</label>
+        <select id="team">
+          <option value="">Seleccione</option>
+        </select>
+
+        <!-- EVENTO -->
+        <label for="event">Evento:</label>
+        <select id="event">
+        <option value="">Seleccione</option>
+          </select>
+
+        <!-- EDAD  -->
+        <!-- EDAD MÍNIMA   -->
+        <label class="titulo">EDAD EXPRESADA EN AÑOS</label>
+        <br>
+        <label for="ageMin">Edad mínima:</label>
+        <select  id="ageMin">
+          <option value="">Seleccione</option>
+        </select>
+
+        <!-- EDAD MÁXIMA  -->
+        <label for="ageMax">Edad máxima:</label>
+        <select id="ageMax">
+          <option value="">Seleccione</option>
+        </select>
+
+
+
+        <button class="buscar" id="btnBuscar" >Buscar</button>
+       </div>
+
+      <table id="resultado" class="table-rwd">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Género</th>
+            <th>Edad</th>
+            <th>Altura (cm)</th>
+            <th>Peso (kg)</th>
+            <th>Deporte</th>
+            <th>Equipo</th>
+            <th>Evento</th>
+            <th>Medalla</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Aqui se podran agregar los datos de los deportistas-->
+        </tbody>
+    </table>
+
+      <script src="/./src/js/main.js" type="module"></script>
       </article>
       <!-- Fin - Main -->
 
 
 
-<!-- Inicio - Footer -->
+    <!-- Inicio - Footer -->
     <!-- Cuerpo del Footer-->
 
 
     <footer class="footer">
 
       <div class="footer-left">
-           <img src="image/footerlogo.webp" alt="Footer logo" height="90px" width="190px">
+       <img src="image/footerlogo.webp" alt="Footer logo" height="90px" width="190px">
        <h3> Juegos Olímpicos </h3>
 
        <p class="footer-links">
@@ -173,8 +218,7 @@
  <!-- Fin - Footer -->
 
 
-
- <script defer src="/src/js/main.js"></script>
+    <script src="js/main.js" type="module"> </script>
 
     </body>
 

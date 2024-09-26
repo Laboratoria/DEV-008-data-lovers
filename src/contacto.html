@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Comité olimpico</title>
     <!--Iconos-->
+    <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="dist/spinner.css">
 
     <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=q4yGN3m7jSSoVZk_cQwaSHm-msnlNBGube3odhdkAL31NhQFoAIW90-DpDGTbLAN-WLlLoFuvMyEX3Dp0NdAZFA6FiwdeQaW0jYq2YXjD9TAeM1wDgTo7F7C5hrRbwq1w2E0sdlGHtTQOlRiQghA4UzgrQ3tRW2ehK4kp7EqlZizNjVNrJbkI6rZVPf39OjQoZb4kN42a2240ufzBeMq0GJk5cd0CDrqKRXpYb-9F1sj2sVuixYOw0xUY_jWwZ8fxE13bdP38YUYgRbam9mLwaMd249j3DMiAANYnbA5p83EszTr5L_RMar3x6JOrinhwpCSNdG9fgmbDu51hhIFZg" charset="UTF-8"></script><script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
@@ -11,7 +13,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&family=Poppins:wght@200&family=Quicksand&family=Vina+Sans&display=swap');
     </style>
 
-
+    <script defer src="js/main.js"></script>
 
     <link rel="shortcut icon" href="image/juegos-olimpicos.png">
     <link rel="stylesheet"    href="css/style.css">
@@ -21,6 +23,7 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!--  -->
+
 
   </head>
 
@@ -58,62 +61,76 @@
         </nav>
     <!-- Fin - Barra de Navegación -->
 
-    <!-- Inicio - Main -->
+ <!-- Inicio - Main -->
     <!-- Cuerpo del contenido -->
-    <article class="main">
-      <h1>NOTICIAS</h1> <br>
 
-      <div class="content">
+    <article class="main 2">
 
-        <div class="content-noticias" >
-          <h3>BOXEO</h3>
-          <h2> Óscar Valdez se declara listo para una pelea de mexicanos contra el 'Vaquero' Navarrete </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/sl28z6gdryrjoidmm2rl" alt="Oscar">
-        </div>
+      <div class="form">
+        <h1> CONTACTO</h1>
+        <form id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Nombre:</label>
+            <input class="form-eti" type="text" id="name" name="name" required placeholder="Ingrese su nombre">
+          </div>
 
-        <div class="content-noticias" >
-          <h3>BALONCESTO</h3>
-          <h2> Carmelo Anthony, triple campeón olímpico, anuncia su retirada del baloncesto </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfvhthv5cr0gbrmkbkle" alt="carmelo">
-        </div>
+          <div class="form-group">
+            <label class="form-label" for="apellido">Apellido:</label>
+            <input class="form-eti" type="text" id="apellido" name="apellido" required placeholder="Ingrese su apellido">
+          </div>
 
-        <div class="content-noticias" >
-          <h3>FUTBOL</h3>
-          <h2> A qué hora juega Ecuador vs. Corea del Sur por el Mundial Sub 20: canales y horarios para ver En Vivo los octavos de final </h2>
-          <img src="https://www.eluniverso.com/resizer/9XT3X8fhIEaXZk3xbwnTIrtXDwM=/720x540/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/IYWTPJVWNVERNCHPPJS77XZSDI.jpg" alt="seleccion" height="175px">
-        </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Correo electrónico:</label>
+            <input class="form-eti" type="text" id="email" name="email" required placeholder="Ingrese su correo electrónico">
+          </div>
 
-        <div class="content-noticias" >
-          <h3>ATLETISMO</h3>
-          <h2> Diamond League en Rabat 2023: previa, programa, estrellas y cómo ver la Liga de Diamante </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/elrdehxlomxhvt6ui9q6" alt="diamond">
-        </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Mensaje:</label>
+            <textarea class="form-eti" id="message" name="message" required placeholder="Ingrese su mensaje adicional"></textarea>
+          </div>
 
-        <div class="content-noticias" >
-          <h3>CICLISMO EN RUTA</h3>
-          <h2> Giro d'Italia: mayores victorias latinas y españolas en la grande italiana de ciclismo </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfy1djiep466douunzoq" alt="giro">
-        </div>
+          <div class="button">
+            <button type="submit" class="boton">Enviar</button><br>
+            <button type="submit" class="boton">Limpiar</button>
+          </div>
 
-        <div class="content-noticias" >
-          <h3>ATLETISMO</h3>
-          <h2> La marcha española brilla en el Europeo por equipos: un récord del mundo y 12 medallas </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/twjznuws7qaexb5i08we" alt="marcha">
-        </div>
+        </form>
       </div>
-      </article>
-      <!-- Fin - Main -->
+
+      <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var message = document.getElementById('message').value;
+
+          // Aquí puedes realizar alguna acción con los datos del formulario, como enviarlos a un servidor
+
+          // Por ejemplo, puedes mostrar una alerta con los datos ingresados
+          window.alert('Nombre: ' + name + '\nCorreo electrónico: ' + email + '\nMensaje: ' + message);
+
+          // Puedes reiniciar el formulario después de enviar los datos
+          document.getElementById('contact-form').reset();
+        });
+      </script>
 
 
 
-<!-- Inicio - Footer -->
+
+
+    </article>
+    <!-- Fin - Main -->
+
+
+
+    <!-- Inicio - Footer -->
     <!-- Cuerpo del Footer-->
 
 
     <footer class="footer">
 
       <div class="footer-left">
-           <img src="image/footerlogo.webp" alt="Footer logo" height="90px" width="190px">
+       <img src="image/footerlogo.webp" alt="Footer logo" height="90px" width="190px">
        <h3> Juegos Olímpicos </h3>
 
        <p class="footer-links">
@@ -173,8 +190,7 @@
  <!-- Fin - Footer -->
 
 
-
- <script defer src="/src/js/main.js"></script>
+    <script src="main.js"> </script>
 
     </body>
 

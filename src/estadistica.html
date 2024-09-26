@@ -19,10 +19,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900" >
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <!--  -->
 
-  </head>
+    <!--  -->
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+   </head>
 
 
 
@@ -53,7 +58,7 @@
         <li style="float:right"> <a href="./testimonios.html" class="link-3">Testimonios</a>     </li>
         <li style="float:right"> <a href="./estadistica.html" class="link-2">Estadísticas</a>    </li>
         <li style="float:right"> <a href="./busqueda.html"    class="link-1">Búsqueda </a>       </li>
-      </ul>
+            </ul>
 
         </nav>
     <!-- Fin - Barra de Navegación -->
@@ -61,46 +66,47 @@
     <!-- Inicio - Main -->
     <!-- Cuerpo del contenido -->
     <article class="main">
-      <h1>NOTICIAS</h1> <br>
+<!-- INICIO DEL CONTENT - Main -->
+      <div class="contenedor-cajas">
 
-      <div class="content">
+          <!--GRAFICO POR GENERO-->
+          <div class="cajacontenedorag">
+          <h1>Gráfico por Género</h1>
+          <canvas id="chartGender" class="caja1"></canvas>
+          </div>
+          <!-- GRÁFICO DE MEDALLAS -->
+          <div class="cajacontenedorag">
+          <h1>Gráfico por medallas obtenidas</h1>
+          <canvas id="chart" class="caja1"></canvas>
+          </div>
 
-        <div class="content-noticias" >
-          <h3>BOXEO</h3>
-          <h2> Óscar Valdez se declara listo para una pelea de mexicanos contra el 'Vaquero' Navarrete </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/sl28z6gdryrjoidmm2rl" alt="Oscar">
-        </div>
+          <!-- CHAMBA DE KATTY -->
+          <!--Grafico por rango de Edad-->
+          <div class="cajacontenedorag">
+          <h1>Gráfico por rango de Edad</h1>
+          <canvas id="chartAge" class="caja1"></canvas>
+          </div>
+          <!-- RANKING DE PAISES CON MÁS MEDALLAS-->
+          <div class="cajacontenedorag">
+          <h1>Ranking de países que ganaron más medallas</h1>
+          <canvas  id="rankingDepor" class="caja1"></canvas>
+          </div>
+          <!-- GRÁFICO DE CANTIDAD DE PERSONAS QUE PARTICIPARON POR PAIS-->
+          <div class="cajacontenedorag">
+          <h1>Gráfico por cantidad de atletas por país</h1>
+          <canvas  id="chartCountry" class="caja1"></canvas>
+          </div>
 
-        <div class="content-noticias" >
-          <h3>BALONCESTO</h3>
-          <h2> Carmelo Anthony, triple campeón olímpico, anuncia su retirada del baloncesto </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfvhthv5cr0gbrmkbkle" alt="carmelo">
-        </div>
+          <!-- GRÁFICO DE CANTIDAD DE PERSONAS POR DEPORTE-->
+          <div class="cajacontenedorag">
+          <h1>Gráfico por cantidad de atletas por deporte</h1>
+          <canvas  id="chartSport" class="caja1"></canvas>
+          </div>
 
-        <div class="content-noticias" >
-          <h3>FUTBOL</h3>
-          <h2> A qué hora juega Ecuador vs. Corea del Sur por el Mundial Sub 20: canales y horarios para ver En Vivo los octavos de final </h2>
-          <img src="https://www.eluniverso.com/resizer/9XT3X8fhIEaXZk3xbwnTIrtXDwM=/720x540/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/IYWTPJVWNVERNCHPPJS77XZSDI.jpg" alt="seleccion" height="175px">
-        </div>
 
-        <div class="content-noticias" >
-          <h3>ATLETISMO</h3>
-          <h2> Diamond League en Rabat 2023: previa, programa, estrellas y cómo ver la Liga de Diamante </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/elrdehxlomxhvt6ui9q6" alt="diamond">
-        </div>
 
-        <div class="content-noticias" >
-          <h3>CICLISMO EN RUTA</h3>
-          <h2> Giro d'Italia: mayores victorias latinas y españolas en la grande italiana de ciclismo </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfy1djiep466douunzoq" alt="giro">
-        </div>
+			</div> <!-- FIN  DEL CONTENT - DIV -->
 
-        <div class="content-noticias" >
-          <h3>ATLETISMO</h3>
-          <h2> La marcha española brilla en el Europeo por equipos: un récord del mundo y 12 medallas </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/twjznuws7qaexb5i08we" alt="marcha">
-        </div>
-      </div>
       </article>
       <!-- Fin - Main -->
 
@@ -113,7 +119,7 @@
     <footer class="footer">
 
       <div class="footer-left">
-           <img src="image/footerlogo.webp" alt="Footer logo" height="90px" width="190px">
+       <img src="image/footerlogo.webp" alt="Footer logo" height="90px" width="190px">
        <h3> Juegos Olímpicos </h3>
 
        <p class="footer-links">
@@ -171,11 +177,7 @@
      </div>
    </footer>
  <!-- Fin - Footer -->
-
-
-
- <script defer src="/src/js/main.js"></script>
-
+      <script src="js/estadistica.js" type="module"> </script>
     </body>
 
 </html>
