@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiverso Ghibli</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root"></div>
+    <header id="header" class="header">
+      <audio controls  id="music" autoplay="true">
+        <source  src="Musica/miaudio.mp3"
+         type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <!-- (../ buscar fuera de carpeta) https://onlinevideoconverter.com/es -->
+      <!--<a href="index.html">
+
+    </a>-->
+      <h1>Ghibli Multiverse</h1>
+      <div class="flex">
+        <div>
+          <img class="portada" src="./Portada/portadasin.png" alt="principal" />
+        </div>
+        <div class="texto">
+          <p>
+            Ghibli (スタジオジブリ ) is a Japanese animation studio considered
+            by critics and many moviegoers as one of the best animation studios
+            in the world.
+          </p>
+          <p>
+            The studio is known for its animated feature films and has also
+            produced several short films for television.
+          </p>
+          <p>Below, you will find more info about this amazing movies.</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main__animations" class="main__animations">
+      <h2 id="animationsTitle">Movies</h2>
+      <br />
+      <div class="main__filtersAndCount">
+        <!--contador de peliculas-->
+        <p id="countFilms" class="countFilms"></p>
+        <div class="filters">
+          <select id="filters__director" class="filters__director">
+            <option selected value="all">Director</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Gorō Miyazaki">Goro Miyazaki</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+            <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
+          </select>
+          <select id="filters__producer" class="filters__producer">
+            <option selected value="all">Producer</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Toshio Suzuki">Toshio Suzuki</option>
+            <option value="Toru Hara">Toru Hara</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+          </select>
+          <select id="filters__year" class="filters__year">
+            <option value="0">More recent</option>
+            <option value="1">Older</option>
+          </select>
+          <button type="button" id="clean">clean</button>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div align="center">
+      <button type="button" id="search">Click the image for more information</button>
+    </div>
+    <br>
+    <br>
+
+      <div class="animations" id="animations"></div>
+      <!-- Se crean las tarjetas de forma dinamica -->
+    </main>
+    <hr />
+    <footer>
+      <div align="center">
+        🔥🐱☔ &copy;Copyright Ghibli Multiverse a.c. 2023 Dany &amp; Ceci 🐺🛩🐷
+      </div>
+      <!--Se buscarón emojis (https://emojikeyboard.io/)-->
+    </footer>
+    <hr />
+
     <script src="main.js" type="module"></script>
   </body>
 </html>

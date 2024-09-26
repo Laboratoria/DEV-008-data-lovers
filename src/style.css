@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: url(https://cur.cursors-4u.net/special/spe-2/spe113.ani),
+      url(https://cur.cursors-4u.net/special/spe-2/spe113.png), auto;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-size: cover;
+    width: 100%;
+  }
+
+body {
+  background-color: #9370db;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.main__filtersAndCount {
+    display: flex;
+    justify-content: center;
+    padding: 5px 12px;
+  }
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4.3rem;
+  color: #eeca06;
+}
+
+h2 {
+  font-size: 3rem;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+
+.portada {
+  width: 400px;
+}
+
+.portada img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding-left: 140px;
+  }
+
+.texto {
+  padding-top: 150px;
+  color: aliceblue;
+  font-size: 2rem;
+  padding-right: 50px;
+}
+
+button {
+  font-weight: bold;
+  padding: 7px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(188, 153, 229);
+}
+
+#search{
+    background-color: #eeca06;
+}
+
+button:hover {
+  background-color: rgb(121, 10, 181);
+}
+
+
+.animations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 290px;
+  height: 370px;
+  margin: 37px;
+  border: rgb(81, 1, 151) 1px solid;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background: linear-gradient(45deg, rgb(109, 51, 210), rgb(157, 191, 255));
+  border-radius: 15px;
+  background-size: auto;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+audio{
+  display:none;
+}
+
+footer {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+  }
+  .card h4{
+      font-size: 1rem;
+      margin: 5px;
+      padding: 5px 10px;
+  }
