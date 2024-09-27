@@ -1,0 +1,267 @@
+* {
+    font-family: 'Lilita One', cursive;
+    /*Letra descargada*/
+
+}
+
+header {
+    display: flex;
+    font-size: 700%;
+    text-align: center;
+    color: #fff;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+
+}
+
+.imagen {
+    display: flex;
+    width: 400px;
+    float: right;
+    height: fit-content;
+}
+
+.imagen1 {
+    display: flex;
+    width: 400px;
+    float: left;
+    height: fit-content;
+}
+.div.frase{
+    display: flex;
+    font-size: 250%;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    position: absolute;
+}
+
+.frase {
+    display: flex;
+    flex:inherit;
+    font-size: 250%;
+    text-align: center;
+    justify-content: flex-end;
+    color: #fff;
+    
+  
+}
+
+.contenedorGeneral {
+    display:contents;
+    background-color: none;
+    align-items: center ;
+    justify-content: center;
+    position: right;
+    float: right;
+    margin-top: 5px;
+    opacity: 0;
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    /*background-color: black;*/
+
+}
+
+body {
+    background-image: url(img/nuube.jpg);
+    background-repeat: no-repeat;
+    /*no se repita la imagen*/
+    background-size: cover;
+    /*cubra toda la página*/
+    background-attachment: fixed;
+    /*se ajusta la imagen al navegador*/
+
+
+}
+
+
+
+.imagen2 {
+    width: 90px;
+    float: left;
+}
+
+.imagen3 {
+    width: 90px;
+    float: left;
+}
+
+.imagen4 {
+    width: 90px;
+    float: left;
+}
+
+.galleryFilterMovies{
+    width:fit-content;
+    display: block;
+    background-color: rgba(71, 59, 240, 0.38);
+    float:none;
+}
+
+.contenedorMenu{
+    display: inline-block;
+    flex: wrap;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: left;
+    margin-top: 1px;
+    width: 350px;
+    height: 580px;
+    
+
+}
+
+.btn1 {
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #9199b8;
+    text-align: center;
+    text-align-last: center;
+    display: inline-block;
+    vertical-align: text-bottom;
+    justify-content: flex;
+    font-size: 27px;
+    font-display: center;
+    padding: 1% 5%;
+    text-decoration: none;
+    position : relative;
+    margin: 4px 4px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0;
+
+}
+
+.btn1:hover{
+    background-color: #fcde5b ;
+
+}
+
+
+
+.btn2 {
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #9199b8;
+    text-align: center;
+    text-align-last: center;
+    display: inline-block;
+    vertical-align: text-bottom;
+    justify-content: flex;
+    font-size: 27px;
+    font-display: center;
+    padding: 1% 5%;
+    text-decoration: none;
+    position : relative;
+    margin: 4px 4px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0;
+
+}
+
+.btn2:hover:hover{
+    background-color: #fcde5b ;
+
+}
+ul, ol {
+    list-style: none;
+}
+
+
+.btn3 {
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #9199b8;
+    text-align: center;
+    text-align-last: center;
+    display: inline-block;
+    vertical-align: text-bottom;
+    justify-content: flex;
+    font-size: 27px;
+    font-display: center;
+    padding: 1% 5%;
+    text-decoration: none;
+    position : relative;
+    margin: 4px 4px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0;
+
+}
+
+.btn3:hover:hover{
+    background-color: #fcde5b ;
+
+}
+
+
+
+
+.alinear {
+    font-size: 250%;
+    text-align: left;
+    color: #fff;
+
+}
+
+
+
+
+.resultado{
+    text-align: center;
+}
+
+.movieCard {
+    width: auto;
+
+}
+
+.tituloPelicula img{
+    width: 100px;
+    position: right;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+/*.estiloTarjetas{
+    width: fit-content;
+}*/
+
+.btnClose{
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #9199b8;
+    text-align: center;
+    text-align-last: center;
+    display: inline-block;
+    vertical-align: bottom;
+    justify-content: flex;
+    font-size: 27px;
+    font-display: center;
+    padding: 1% 5%;
+    text-decoration: none;
+    position: relative;
+    margin: 4px 4px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0;
+    bottom: 5px;
+    right: 10px;
+
+
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+
+
+}
+
+.tituloPelicula {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 200px);
+}
+
+.tituloPelicula image{
+    width:auto;
+}
