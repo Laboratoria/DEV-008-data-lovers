@@ -140,7 +140,7 @@ export default{
       "lastName": "Baratheon",
       "fullName": "Joffrey Baratheon",
       "title": "Lord of the Seven Kingdoms, Protector of the Realm",
-      "family": "House Lanister",
+      "family": "House Lannister",
       "imageUrl": "https://thronesapi.com/assets/images/joffrey.jpg",
       "born": "286 DC",
       "death": "300 DC"
@@ -151,7 +151,7 @@ export default{
       "lastName": "Lannister",
       "fullName": "Tyrion Lannister",
       "title": "Hand of the Queen",
-      "family": "House Lanister",
+      "family": "House Lannister",
       "imageUrl": "https://thronesapi.com/assets/images/tyrion-lannister.jpg",
       "born": "272 DC"
     },
@@ -273,10 +273,10 @@ export default{
     {
       "id": 26,
       "firstName": "Viserys",
-      "lastName": "Targaryan",
-      "fullName": "Viserys Targaryn",
+      "lastName": "Targaryen",
+      "fullName": "Viserys Targaryen",
       "title": "King Viserys III",
-      "family": "Targaryan",
+      "family": "Targaryen", 
       "imageUrl": "https://thronesapi.com/assets/images/viserys-targaryan.jpg",
       "born": "276 DC",
       "death": "298 DC"

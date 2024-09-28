@@ -2,10 +2,81 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Game of Thrones</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="active">
+      <img src="header/titulo.png" style="max-width:100%;height:180px;">
+    </header>
+    <br>
+    
+    <nav>
+
+      <input type="search" id="buscador" placeholder="Apellido">
+    <button id="busqueda">
+      <span>Buscar</span></button>
+      <br>
+      <br>
+    <div class="selec-abc" id="order">
+      <select class="orden" id="ordenabc">
+        <option disabled selected>orden alfabetico</option>
+        <option value="abc"> A-Z</option>
+        <option value="cba">Z-A</option>
+      </select>
+    </div>
+    <br>
+    <select class= "casa" id="filtro-casas">
+      <option disabled selected>Casas</option>
+      <option value="todas">Todas</option>
+      <option value="Stark">Stark</option>
+      <option value="Targaryen">Targaryen</option>
+      <option value="Tarly">Tarly</option> 
+      <option value="Baratheon">Baratheon</option> 
+      <option value="Lannister">Lannister</option>
+    </select>
+  </nav>
+
+    <br>
+    <br>
+    
+    <section class="Detalles" >
+    <article>
+    <details >
+      <p>En un mundo fantástico y en un contexto medieval varias familias, relativas a la nobleza, se disputan el poder para dominar el territorio ficticio de Poniente (Westeros) y tomar el control de los Siete Reinos desde el Trono de Hierro, lugar donde el rey ejerce el poder.
+
+            Mientras tiene lugar una guerra civil para conseguir el poder, detrás del Muro que divide el reino de Poniente y la zona norte, los muertos amenazan con librar la batalla contra los vivos.
+        
+            Entretanto, Daenerys Targaryen, la hija del antiguo rey, regresa a Poniente para reclamar su lugar y así vengar el deceso de sus ascendientes en la guerra civil anterior.
+          </p>
+          </details>
+        </article>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="container"  id="gotImg" ></div>
+
+    <!--  <section class="modal">
+        <div class="modal_container">
+          <img src="Images/wp6808094.png" class="modal_img">
+          <h2 class="modal_title">!Bienvenido al Juego de Tronos¡</h2>
+          <p class="modal_paragraph">"Cuando cae la nieve y los vientos blancos soplan, el lobo solitario muere, pero la manada sobrevive".
+            Ned Stark</p>
+          <a href="#" class="modal_close">Cerrar Modal</a>
+        </div> 
+      </section> -->
+      
+      
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
